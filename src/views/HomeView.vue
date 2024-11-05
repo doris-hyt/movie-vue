@@ -10,10 +10,7 @@ export default {
     return{
       movies_per_page:12,
       movies_one_page:1,
-
-
     }
-
   },
   methods:{
     showMovieModal(id) {
@@ -25,10 +22,6 @@ export default {
 }
 },
   computed: {
-    // 使用計算屬性來從 AllMoviesDetails 獲取數據
-    selectedMovie() {
-      return this.AllMovies.length > 0 ? this.AllMovies.length : null;
-    },
     number() {
        return Math.ceil((this.AllMovies.length / this.movies_per_page))
    }
